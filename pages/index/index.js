@@ -23,12 +23,13 @@ Page({
     })
   },
   onLoad: function () {
+    //获取缓存积分
    var s= wx.getStorageSync("score");
     this.setData({
       score:s
     })
   },
-  again:function(){
+  again:function(){//再来一次
       var that = this;
       if (sysind < 2) {
         sysind++;
@@ -39,7 +40,7 @@ Page({
         liveimg: '../../souces/' + that.data.imgs[sysind]
       })
   },
-  chooseimg:function(e){
+  chooseimg:function(e){ //选择出拳,并判断输赢
     if (this.data.stop){
       return;
     }
@@ -68,7 +69,7 @@ Page({
     })
     
   },
-  continuego:function(){
+  continuego:function(){//继续
     if(this.data.stop){
       this.data.score--;      
       wx.setStorageSync('score', this.data.score);

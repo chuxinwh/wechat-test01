@@ -64,6 +64,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    //中奖名单
      this.scroll();
      var s = wx.getStorageSync("score");
      this.setData({
@@ -77,15 +78,13 @@ Page({
   onReady: function () {
   
   },
-  start: function (e) {
+  start: function (e) {  //点击抽奖
     var _this = this;
     n = 1;
-    //开始事件以后置为停止事件（改为自动停止）
+    //开始事件以后置为停止事件
     this.setData({
       isclick: ""
     })
-    //重置动画
-   // _this.reset.call(_this);
 
     timer = setInterval(function () {
       //开始旋转
@@ -142,10 +141,10 @@ Page({
       }
       var animation = wx.createAnimation({
         transformOrigin: "50% 50%",
-        duration: 4 * 300 + whichdegs * 1.4,
+        duration: 4 * 300 + whichdegs * 1.4,    //1.4一度所花的时间
         timingFunction: "ease-out"
       });
-      animation.rotate(n * 360 + whichdegs).step();//d转到哪个盘
+      animation.rotate(n * 360 + whichdegs).step();  //whichdegs转到哪个盘
       this.setData({
         animationData: animation.export()
       })
