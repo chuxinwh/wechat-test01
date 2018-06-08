@@ -1,0 +1,8 @@
+<!--modal弹出框 -->
+<modal   title="恭喜您"  hidden="{{hiddenModal}}"  confirm-text="确定"   no-cancel="true"  
+  bindconfirm="listenerConfirm" > {{detail}} </modal>  
+<!--modal弹出框 -->
+<view style="width:100%;height：100%;display:flex;flex-direction:column;align-items: center;justify-content: center;">  
+<image animation="{{animationData}}" style="width:600rpx;height:600rpx;margin-top:20rpx" src="/souces/zhuanpan.png"></image>  
+<image style="width:130rpx;height:160rpx;position:absolute;" src="/souces/pointer.png" bindtap="{{isclick}}" disabled="{{disabled}}"></image>  
+</view>  

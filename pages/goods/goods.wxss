@@ -1,0 +1,19 @@
+page{background: #68c9fe}
+swiper image{width: 750rpx;height: 300rpx;}
+.goodsList{margin-top: 20rpx;overflow: hidden;padding: 0 14rpx}
+.eachgood{width: 354rpx;font-size: 0;margin-bottom: 10rpx;float: left;background: #fff}
+.eachgood:nth-child(odd){margin-right: 14rpx}
+.eachgood image{width:354rpx;height:354rpx}
+.eachgood .goodname{display:block;background: #959595;font-size: 28rpx;height: 64rpx;line-height: 64rpx;text-align: center;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;color: #fff}
+.eachgood .bottom{
+  height: 60rpx;line-height: 60rpx;
+  font-size: 28rpx;
+  padding: 6rpx
+}
+.eachgood .score{
+    font-size: 36rpx;
+    font-weight: 600;
+    color: #f63905;
+    margin-right: 8rpx
+}
+.btn{float: right;background: #ff7800;padding: 0 8rpx;border-radius: 10rpx;color: #fff}

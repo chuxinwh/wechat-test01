@@ -1,0 +1,11 @@
+<!--pages/home/home.wxml-->
+ <view class='currentScore'><image src="../../souces/xin.png" class='xin'></image><text id='currentScore'>{{score}}</text></view>
+<image src='/souces/banner01.jpg' class='topimg' mode='aspectFill'></image>
+<view class='hrefs'>
+  <navigator url='/pages/tasks/tasks'><image src='/souces/T2.png'></image></navigator>
+  <navigator url='/pages/goods/goods'><image src='/souces/T3.png'></image></navigator>
+</view>
+<view class='games'>
+ <navigator  url='/pages/bigWheel/bigWheel' ><image src='/souces/cj43881.png'></image></navigator>
+ <navigator url='/pages/index/index'><image src='/souces/L3.png'></image></navigator>
+</view>

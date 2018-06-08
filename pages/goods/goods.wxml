@@ -1,0 +1,19 @@
+<swiper autoplay="true" duration="800">
+  <block wx:for="{{bannerImg}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode='aspectFill'/>
+    </swiper-item>
+  </block>
+</swiper>
+ <view class='goodsList'>
+    <block wx:for="{{datalist}}">
+        <view class='eachgood'>
+            <image class='goodimg' src='{{item.imgsrc}}' mode='aspectFill'></image>
+            <text class='goodname'>{{item.txt}}</text>
+            <view class='bottom'>
+              <text class='score'>{{item.score}}</text><text>积分</text>
+              <text class='btn'>立即兑换</text>
+            </view>
+        </view>
+    </block>
+  </view>

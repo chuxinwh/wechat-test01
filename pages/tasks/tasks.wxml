@@ -1,0 +1,15 @@
+<!--pages/tasks/tasks.wxml-->
+<view class='tasks'>
+ <block wx:for="{{tasks}}"> 
+  <view  class='each'>
+     <view class='top'>
+     <text class='score'>{{item.score}}</text>
+     {{item.txt}}
+     </view>
+     <view class='bottom'>
+      <text>{{item.num}}人参与</text>
+       <text>{{item.time}}截止</text>
+     </view>
+  </view>
+  </block> 
+</view>

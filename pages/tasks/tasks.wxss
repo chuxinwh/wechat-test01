@@ -1,0 +1,7 @@
+/* pages/tasks/tasks.wxss */
+.tasks{padding: 0 20rpx}
+.tasks .each{border-bottom: 1px solid #eee;color: #333;font-size: 30rpx;padding: 20rpx 0;}
+.tasks .each .score{display:inline-block;width:56rpx;height:56rpx;line-height:56rpx;background: #00103d;font-size: 34rpx;color: #fff;text-align: center;border-radius: 100%;position: absolute;left: 0;top:0;z-index: 5}
+.bottom{margin-top: 14rpx;font-size: 28rpx;color: #999;margin-left: 66rpx}
+.bottom text{margin-right: 40rpx}
+.top{position: relative;padding-left: 66rpx}

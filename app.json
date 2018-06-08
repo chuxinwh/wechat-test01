@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/bigWheel/bigWheel",
+    "pages/tasks/tasks",
+    "pages/index/index",
+    "pages/goods/goods",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"black"
+  }
+}

@@ -1,0 +1,33 @@
+<!--pages/bigWheel/bigWheel.wxml-->
+<!--modal弹出框 -->
+<modal   title="恭喜您"  hidden="{{hiddenModal}}"  confirm-text="确定"   no-cancel="true"  
+  bindconfirm="listenerConfirm" > {{detail}} </modal>  
+<!--modal弹出框 -->
+ <view class='currentScore'><image src="../../souces/xin.png" class='xin'></image><text id='currentScore'>{{score}}</text></view>
+<view>
+<!--顶部背景  -->
+<image src='../../souces/bg01.jpg' class='topbg' mode='aspectFill'></image>
+<!--转盘  -->
+<view class='zhuanpan'>
+  <image src='../../souces/ly-plate-c.gif' class='bg'></image>
+  <image src='../../souces/bg-lottery.png' class='innerbg'  animation="{{animationData}}"></image>
+  <image src='../../souces/playbtn.png' class='btn' bindtap="{{isclick}}"></image>
+</view>
+<view class='shuoming'>游戏说明：每转盘一次使用15积分</view>
+<!--中奖名单  -->
+<view class='winnerList'>
+  <view class='title'>中奖名单</view>
+  <view class='ourterheight'>
+  <view class='ulList' style='position:absolute;top:{{topval}}rpx'>
+    <block wx:for="{{winnerdata}}"> 
+      <view class='each'> 
+         <text>{{item.tel}}</text>
+         <text>{{item.txt}}</text>
+         <text>{{item.time}}</text>
+      </view>
+    </block> 
+  </view>
+  </view>
+</view>
+
+</view>

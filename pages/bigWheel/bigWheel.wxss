@@ -1,0 +1,48 @@
+/* pages/bigWheel/bigWheel.wxss */
+page{height: 100%;background: #00b6ce;padding-top: 196rpx;box-sizing: border-box}
+.topbg{width: 100%;height:786rpx;position: absolute;top:-4rpx;left: 0;z-index: 5}
+.zhuanpan{width: 525rpx;height: 525rpx;position: relative;margin: 0 auto;z-index: 10}
+.zhuanpan .bg{width: 100%;height: 525rpx;}
+.zhuanpan .innerbg{
+  position: absolute;
+  width:440rpx;
+  height:440rpx;
+  top:42rpx;
+  left:42rpx;
+}
+.zhuanpan .btn{position: absolute;top:50%;left:50%;transform: translate(-50%,-50%);width: 180rpx;height: 180rpx;z-index: 10}
+.winnerList{
+  margin:2% auto 0;
+  width:88%;
+}
+.ourterheight{
+  position:relative;
+  z-index:10;
+  height:320rpx;
+  overflow:hidden;
+  background:#f9ecd5;
+}
+.winnerList .title{
+    background: #ffc39e;
+    border-radius: 6rpx 6rpx 0 0;
+    padding: 2% 1%;
+    text-align: center;
+    color: #a83700;
+    font-size: 32rpx;
+    border: 2px solid #f9ecd5;
+}
+.winnerList .ulList{
+  position: absolute;
+  width: 94%;
+  left: 3%;
+  z-index: 10;
+}
+.each{height:64rpx;line-height:64rpx;font-size: 28rpx;color: #d04500;padding:0 3% }
+.each text:first-child{margin-right: 40rpx}
+.each text:nth-child(2){display:inline-block;width: 280rpx}
+.each text:last-child{margin: 0}
+
+.shuoming{padding-top:10%;padding-left: 6%;font-size: 28rpx;color: #ffc39e}
+.currentScore{position: absolute;top:6rpx;right: 3%;color: #fff;z-index: 20}
+.xin{width: 40rpx;height:40rpx;vertical-align: middle;margin-right: 8rpx}
+.currentScore text{vertical-align: middle;font-size: 30rpx}

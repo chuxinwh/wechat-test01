@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="container">
+ <view class='currentScore'><image src="../../souces/xin.png" class='xin'></image><text id='currentScore'>{{score}}</text></view>
+ <!--对比拳框  -->
+<view class='chuquanbox'>
+  <view class='system'>
+    <image src='../../souces/bg.png' class='bg'></image>
+    <image src='{{liveimg}}' class='livimg'></image>
+  </view>
+  <view class='result' wx:if='{{stop}}'>{{result}}</view>
+  <view class='user'>
+    <image src='../../souces/bg.png' class='bg'></image>
+    <image src='{{userimg}}' class='livimg'></image>
+   </view>
+  </view>
+   <!--对比拳框  -->
+   <!--选择出拳框  -->
+    <view class='choose'>
+        <text>请点击选择出拳</text>
+        <view class='imgBox'>
+        <block wx:for='{{imgs}}'>
+             <image src='../../souces/{{item}}' bindtap='chooseimg' data-id='{{index}}'></image>
+        </block>
+        </view>
+        <view class='contunueBtn' bindtap='continuego'>{{word}}<image src="../../souces/xin.png" class='xin' style='margin-left:6rpx'></image></view>
+    </view>
+   <!--选择出拳框  -->
+   <!-- 获取积分和点击兑换 -->
+    <view class='bottombtn'>
+      <navigator url='../goods/goods'><text>立即兑换</text></navigator>
+      <navigator url='../goods/goods'><text>获取积分</text></navigator>
+    </view>
+   <!-- 获取积分和点击兑换 -->
+   <text class='shuoming'>游戏说明：每猜拳一次使用一积分，赢了获取5积分，输了或平局不扣积分</text>
+</view>
